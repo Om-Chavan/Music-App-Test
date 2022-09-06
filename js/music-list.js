@@ -2,7 +2,6 @@
 
 //   {
 //     name: "Here is the music name",
-//     artist: "Here is the artist name",
 //     img: "image name here - remember img must be in .jpg formate and it's inside the images folder of this project folder",
 //     src: "music name here - remember img must be in .mp3 formate and it's inside the songs folder of this project folder"
 //   }
@@ -11,45 +10,38 @@
 
 let allMusic = [
   {
-    name: "Harley Bird - Home",
-    artist: "Jordan Schor",
+    name: "Cartoon ",
     img: "music-1",
-    src: "music-1"
+    src: "Cartoon"
   },
   {
-    name: "Ikson Anywhere – Ikson",
-    artist: "Audio Library",
-    img: "music-2",
-    src: "music-2"
+    name: "Excuses",
+    img: "music-2",    
+    src: "Excuses"
   },
   {
-    name: "Beauz & Jvna - Crazy",
-    artist: "Beauz & Jvna",
+    name: "Kesariya",
     img: "music-3",
-    src: "music-3"
+    src: "Kesariya"
   },
   {
-    name: "Hardwind - Want Me",
-    artist: "Mike Archangelo",
+    name: "Pasoori",
     img: "music-4",
-    src: "music-4"
+    src: "Pasoori"
   },
   {
-    name: "Jim - Sun Goes Down",
-    artist: "Jim Yosef x Roy",
+    name: "Ranjha",
     img: "music-5",
-    src: "music-5"
+    src: "Ranjha"
   },
   {
-    name: "Lost Sky - Vision NCS",
-    artist: "NCS Release",
-    img: "music-6",
-    src: "music-6"
-  },
+    name: "Song from FireBase",
+    src: "https://firebasestorage.googleapis.com/v0/b/songs-73646.appspot.com/o/Excuses.mp3?alt=media&token=e27559bd-4d29-42ff-9ec0-5de21a3e0cf4"
+  }
+
   // like this paste it and remember to give comma after ending of this bracket }
   // {
   //   name: "Here is the music name",
-  //   artist: "Here is the artist name",
   //   img: "image name here - remember img must be in .jpg formate and it's inside the images folder of this project folder",
   //   src: "music name here - remember img must be in .mp3 formate and it's inside the songs folder of this project folder"
   // }

@@ -1,7 +1,6 @@
 const wrapper = document.querySelector(".wrapper"),
 musicImg = wrapper.querySelector(".img-area img"),
 musicName = wrapper.querySelector(".song-details .name"),
-musicArtist = wrapper.querySelector(".song-details .artist"),
 playPauseBtn = wrapper.querySelector(".play-pause"),
 prevBtn = wrapper.querySelector("#prev"),
 nextBtn = wrapper.querySelector("#next"),
@@ -22,9 +21,10 @@ window.addEventListener("load", ()=>{
 
 function loadMusic(indexNumb){
   musicName.innerText = allMusic[indexNumb - 1].name;
-  musicArtist.innerText = allMusic[indexNumb - 1].artist;
   musicImg.src = `images/${allMusic[indexNumb - 1].src}.jpg`;
   mainAudio.src = `songs/${allMusic[indexNumb - 1].src}.mp3`;
+  mainAudio.src = "https://firebasestorage.googleapis.com/v0/b/songs-73646.appspot.com/o/Excuses.mp3?alt=media&token=e27559bd-4d29-42ff-9ec0-5de21a3e0cf4";
+
 }
 
 //play music function
@@ -176,11 +176,10 @@ closemoreMusic.addEventListener("click", ()=>{
 const ulTag = wrapper.querySelector("ul");
 // let create li tags according to array length for list
 for (let i = 0; i < allMusic.length; i++) {
-  //let's pass the song name, artist from the array
+  //let's pass the song name from the array
   let liTag = `<li li-index="${i + 1}">
                 <div class="row">
                   <span>${allMusic[i].name}</span>
-                  <p>${allMusic[i].artist}</p>
                 </div>
                 <span id="${allMusic[i].src}" class="audio-duration">3:40</span>
                 <audio class="${allMusic[i].src}" src="songs/${allMusic[i].src}.mp3"></audio>
